@@ -7,6 +7,18 @@
 	<title>Document</title>
 </head>
 <body>
-	Hello Word!
+	<h1>Hello Word!</h1>
+	<hr/>
+	<input type="text">
 </body>
+<script>
+	var input = document.getElementsByTagName('input')[0];
+	input.onblur = function(){
+		if(input.value!="周志佳"){
+			alert(input.value+"is very uglily")
+		}else{
+			alert(input.value + "is very nattiness")
+		}
+	}
+</script>
 </html>
